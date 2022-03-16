@@ -3,12 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla Todo</title>
+    <title>🔫 To Do List</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="container"></div>
+    <header>
+      <h2 class="clock">00:00:00</h2>
+      <h2>🔫 To Do List</h2>
+      <input type="text" placeholder="할 일을 입력하세요" />
+      <button>+</button>
+    </header>
+    <div class="toDo">
+      <div>
+        <p>🔮 To Do</p>
+        <p></p>
+      </div>
+      <ul class="toDoList"></ul>
+    </div>
+    <div class="done">
+      <p>❤️‍🔥 Done</p>
+      <p></p>
+      <ul class="doneList"></ul>
+    </div>
   </body>
-  <script src="script.js"></script>
+  <script src="js/clock.js"></script>
 </html>

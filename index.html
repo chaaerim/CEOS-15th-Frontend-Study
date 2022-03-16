@@ -11,21 +11,24 @@
     <header>
       <h2 class="clock">00:00:00</h2>
       <h2>🔫 To Do List</h2>
-      <input class="toDoInput" type="text" placeholder="할 일을 입력하세요" />
-      <button>+</button>
+      <form class="submitForm">
+        <input class="toDoInput" type="text" placeholder="할 일을 입력하세요" />
+        <button class="addToDoBtn">+</button>
+      </form>
     </header>
     <div class="toDo">
       <div>
-        <p>🔮 To Do</p>
-        <p></p>
+        <span>🔮 To Do</span>
+        <span class="toDoNum">(0)</span>
       </div>
       <ul class="toDoList"></ul>
     </div>
     <div class="done">
-      <p>❤️‍🔥 Done</p>
-      <p></p>
+      <span>❤️‍🔥 Done</span>
+      <span class="doneNum">(0)</span>
       <ul class="doneList"></ul>
     </div>
   </body>
   <script src="js/clock.js"></script>
+  <script src="js/todo.js"></script>
 </html>

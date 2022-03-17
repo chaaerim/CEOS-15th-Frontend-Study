@@ -23,6 +23,32 @@ function doneToDoCount() {
   doneNum.innerHTML = `(${doneLeft.length})`;
 }
 
+//checkBtn 클릭시 done으로 todo 이동
+function moveToDone(event) {
+  const doneItem = event.target.parentElement;
+  if (!this.isCompleted) {
+    doneList.appendChild(doneItem);
+    this.isCompleted = true;
+  } else {
+    toDoList.appendChild(doneItem);
+    this.isCompleted = false;
+  }
+}
+
+// todo delete
+function deleteToDo(event) {
+  // li 가져와서 삭제
+  const deleteLi = event.target.parentElement;
+  deleteLi.remove();
+  toDos = toDos.filter((toDo) => toDo.id !== parseInt(deleteLi.id));
+
+  //todo 카운팅과 done todo 카운팅 -1
+  //if(toDoLeft.length<=0)
+  //(doneLeft.length<=0)
+  toDoCount();
+  doneToDoCount();
+}
+
 //입력 받은 todo를 To Do 밑에 보여주기
 function paintToDo(newToDo) {
   //todo 각각에 들어갈 요소들
@@ -30,6 +56,9 @@ function paintToDo(newToDo) {
   const span = document.createElement('span');
   const deleteBtn = document.createElement('button');
   const checkBtn = document.createElement('button');
+
+  //같은 이름의 todo가 여러개 있을 때를 대비해서 id 붙이기
+  li.id = newToDo.id;
 
   //list에 요소 붙이기
   li.appendChild(span);
@@ -43,6 +72,10 @@ function paintToDo(newToDo) {
   //button에 classd이름 붙이기
   checkBtn.classList.add('checkBtn');
   deleteBtn.classList.add('deleteBtn');
+
+  //button에 이벤트 리스너 붙이기
+  checkBtn.addEventListener('click', moveToDone);
+  deleteBtn.addEventListener('click', deleteToDo);
 
   toDoList.appendChild(li);
 }

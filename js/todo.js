@@ -25,13 +25,25 @@ function doneToDoCount() {
 
 //입력 받은 todo를 To Do 밑에 보여주기
 function paintToDo(newToDo) {
+  //todo 각각에 들어갈 요소들
   const li = document.createElement('li');
   const span = document.createElement('span');
-  const button = document.createElement('button');
+  const deleteBtn = document.createElement('button');
+  const checkBtn = document.createElement('button');
+
+  //list에 요소 붙이기
   li.appendChild(span);
-  li.appendChild(button);
+  li.appendChild(checkBtn);
+  li.appendChild(deleteBtn);
+
   span.innerText = newToDo;
-  button.innerText = `🗑`;
+  checkBtn.innerText = `✔️`;
+  deleteBtn.innerText = `🗑`;
+
+  //button에 classd이름 붙이기
+  checkBtn.classList.add('checkBtn');
+  deleteBtn.classList.add('deleteBtn');
+
   toDoList.appendChild(li);
 }
 

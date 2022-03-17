@@ -33,6 +33,11 @@ function moveToDone(event) {
     toDoList.appendChild(doneItem);
     this.isCompleted = false;
   }
+  if (this.isCompleted) {
+    doneList.classList.add('checked');
+  }
+  toDoCount();
+  doneToDoCount();
 }
 
 // todo delete
@@ -41,7 +46,6 @@ function deleteToDo(event) {
   const deleteLi = event.target.parentElement;
   deleteLi.remove();
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(deleteLi.id));
-
   //todo 카운팅과 done todo 카운팅 -1
   //if(toDoLeft.length<=0)
   //(doneLeft.length<=0)
@@ -78,6 +82,8 @@ function paintToDo(newToDo) {
   deleteBtn.addEventListener('click', deleteToDo);
 
   toDoList.appendChild(li);
+  toDoCount();
+  doneToDoCount();
 }
 
 //delete
@@ -101,7 +107,6 @@ function handleToDoSubmit(event) {
 
   paintToDo(newToDo);
   toDoCount();
-  //saveToDos();
 }
 
 submitForm.addEventListener('submit', handleToDoSubmit);

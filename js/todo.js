@@ -21,7 +21,7 @@ function doneToDoCount() {
 //checkBtn 클릭시 done으로 todo 이동
 function moveToDone(event) {
   const doneItem = event.target.parentElement;
-  console.log(doneItem.isCompleted);
+
   if (!doneItem.isCompleted) {
     doneList.appendChild(doneItem);
     doneItem.isCompleted = true;

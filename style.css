@@ -47,7 +47,7 @@ li {
 form {
   text-align: center;
 }
-.toDoInput {
+.to-do-input {
   padding-left: 20px;
   border: none;
   width: 320px;
@@ -61,8 +61,8 @@ form {
   font-weight: light;
 }
 
-.toDoList,
-.doneList {
+.to-do-list,
+.done-list {
   padding: 0;
   padding-top: 20px;
   margin: 0;
@@ -77,8 +77,8 @@ form {
   margin-top: 10px;
 }
 
-.checkBtn,
-.deleteBtn {
+.check-btn,
+.delete-btn {
   float: right;
 }
 

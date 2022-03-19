@@ -1,9 +1,9 @@
-const toDoInput = document.querySelector('input.toDoInput');
-const toDoNum = document.querySelector('.toDoNum');
-const doneNum = document.querySelector('.doneNum');
+const toDoInput = document.querySelector('input.to-do-input');
+const toDoNum = document.querySelector('.to-do-num');
+const doneNum = document.querySelector('.done-num');
 const submitForm = document.querySelector('form');
-const toDoList = document.querySelector('.toDoList');
-const doneList = document.querySelector('.doneList');
+const toDoList = document.querySelector('.to-do-list');
+const doneList = document.querySelector('.done-list');
 
 let toDos = [];
 
@@ -76,8 +76,8 @@ function paintToDo(newToDoObj) {
   deleteBtn.innerText = `🗑`;
 
   //button에 class이름 붙이기
-  checkBtn.classList.add('checkBtn');
-  deleteBtn.classList.add('deleteBtn');
+  checkBtn.classList.add('check-btn');
+  deleteBtn.classList.add('delete-btn');
 
   //button에 이벤트 리스너 붙이기
   checkBtn.addEventListener('click', moveToDone);

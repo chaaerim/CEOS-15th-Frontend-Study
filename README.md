@@ -21,7 +21,7 @@
 
 ### 5. Routing & State Management
 - 기간: 2022.05.08-2022.05.13 </br>
-- 📎 [repo](https://github.com/chaaerim/react-messenger-15th)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 💻 [포 링크](https://react-messenger-15th-three.vercel.app/)
+- 📎 [repo](https://github.com/chaaerim/react-messenger-15th)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 💻 [배포 링크](https://react-messenger-15th-three.vercel.app/)
 
 ### 6. Next.js & SSR
 - 기간: 2022.05.15-2022.05.20 </br>

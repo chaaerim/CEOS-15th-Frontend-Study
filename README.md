@@ -30,5 +30,5 @@
 
 ### 7. API Fetching & auth (합동 스터디)
 - 기간: 2022.06.15-2022.06.24 </br>
-- 📎 [repo](https://github.com/chaaerim/react-vote-15th)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 💻 [포 링크](https://react-vote-15th-mu.vercel.app/)
+- 📎 [repo](https://github.com/chaaerim/react-vote-15th)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 💻 [배포 링크](https://react-vote-15th-mu.vercel.app/)
 
